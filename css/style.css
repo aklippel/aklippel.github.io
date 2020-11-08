@@ -1,0 +1,178 @@
+p, h1, h2, h3, h4, h5, h6, nav{
+
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 10px;
+}
+
+li, ol, ul{
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    font-family: 'Futura', sans-serif;
+
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font: 200px;
+    text: black;
+}
+
+img{
+    width: 800px;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+
+body{
+    background-color: #C5CBE3;
+
+}
+
+header{
+    background-color: #D79922;
+}
+
+nav{
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+}
+
+footer{
+    background-color: #D79922;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+ul.resume{
+    list-style: circle;
+    list-style-type: circle;
+    padding-bottom: 20px;
+
+}
+
+div ul{
+    list-style: circle;
+    list-style-type: circle;
+}
+
+#music-image{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#music-text{
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 10px;
+
+}
+
+h1.travel{
+    font-size: 50px;
+}
+
+p.travel{
+    font-size: 25px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+    width: 100vw;
+    row-gap: 0;
+  }
+
+.daytona-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+}
+
+.abbeyroad-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+}
+
+.rocky-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+}
+
+.upnorth-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+}
+
+.ski-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 5/span 1;
+}
+
+.california-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 6/span 1;
+}
+
+.sunset-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 7/span 1;
+}
+
+.mopop-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 8/span 1;
+}
+
+.bigben-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 9/span 1;
+}
+
+.headphones-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 10/span 1;
+}
+
+.familyatbeach-image{
+    display: grid;
+    overflow: hidden;
+    grid-column: 1/span 1;
+    grid-row: 11/span 1;
+}
+
