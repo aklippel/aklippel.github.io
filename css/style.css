@@ -55,7 +55,7 @@ nav{
   }
 
 .skip-to-content-link {
-    background: #D79922;
+    background: black;
     height: 30px;
     left: 50%;
     padding: 8px;
@@ -78,12 +78,12 @@ a:-webkit-any-link{
 }
 
 .nav a:hover, a:focus, a:visited{
-    color: #4056A1;
+    color: black;
     text-decoration: none;
   }
 
 .nav .current{
-    color: #4056A1;
+    color: black;
     text-emphasis: bold;
     text-decoration: underline;
 }
@@ -113,14 +113,14 @@ div ul{
     list-style-type: circle;
 }
 
-#music-image{
+.music-image{
     width: auto;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-#music-text{
+.music-text{
     padding-top: 20px;
     padding-bottom: 20px; 
     padding-left: 10px;
