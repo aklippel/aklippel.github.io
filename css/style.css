@@ -1,13 +1,14 @@
 p, h1, h2, h3, h4, h5, h6, nav{
 
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    padding-left: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%; 
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 li, ol, ul{
     font-family: 'Open Sans', sans-serif;
-    padding-left: 10px;
+    padding: 1.5%;
 
 }
 
@@ -19,14 +20,14 @@ h1, h2, h3, h4, h5, h6{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font: 200px;
+    font: 1em;
     text: black;
 }
 
 img{
-    width: 800px;
-    padding-top: 40px;
-    padding-bottom: 40px; 
+    width: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%; 
 }
 
 body{
@@ -34,38 +35,30 @@ body{
 
 }
 
+a.skip-link{
+    background: white;
+    left: 0;
+    padding: 1%;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip-link:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
 header{
     background-color: #D79922;
 }
 
 nav{
     text-align: center;
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.skip-to-content-link {
-    left: 100%;
-    position: absolute;
-    transform: translateY(-100%);
-  }
-
-.skip-to-content-link {
-    background:white;
-    height: 30px;
-    left: 50%;
-    padding: 8px;
-    position: absolute;
-    transform: translateY(-100%);
-    transition: transform 0.3s;
-}
-  
-.skip-to-content-link:focus {
-    transform: translateY(0%);
+    font-size: 1.75em;
 }
 
 a:-webkit-any-link{
@@ -90,49 +83,39 @@ a:-webkit-any-link{
 
 footer{
     background-color: #D79922;
-    font-size: 30px;
+    font-size: 1em;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
 }
 
 ul.resume{
     list-style: circle;
     list-style-type: circle;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 
-}
-
-li.resume{
-    list-style: circle;
-    list-style-type: circle;
-}
-
-div ul{
-    list-style: circle;
-    list-style-type: circle;
 }
 
 .music-image{
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 .music-text{
-    padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
     padding-left: 10px;
 
 }
 
 h1.travel{
-    font-size: 50px;
+    font-size: 1.65em;
 }
 
 p.travel{
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 .container{
@@ -221,3 +204,287 @@ p.travel{
     grid-row: 11/span 1;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 7%; /* Some padding */ 
+    border: 1px solid #4056A1; /* Gray border */
+
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 2%; /* Add a top margin */
+    margin-bottom: 2%; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #F13C20;
+    color: white;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #C5CBE3
+    ;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+    border-radius: 5px;
+    background-color: #C5CBE3;
+    padding: 8%;
+}
+
+@media screen and (min-width: 750px){
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .resume{
+        padding: .75%;
+    }
+
+    .portrait{
+        width: 36vw;
+        padding: 0;
+        margin: 0;
+        padding-left: 1%;
+    }
+
+    .landscape{
+        width: 68vw;
+        padding: 0;
+        padding-left: 1%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 0;
+        padding-left: 1%;
+
+
+      }
+    
+    .daytona-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+    }
+    
+    .abbeyroad-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 2/span 2;
+        grid-row: 1/span 1;
+    }
+    
+    .rocky-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 1;
+        grid-row: 2/span 2;
+    }
+    
+    .upnorth-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 2/span 2;
+        grid-row: 6/span 1;
+    }
+    
+    .ski-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 2;
+        grid-row: 4/span 1;
+    }
+    
+    .california-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 2/span 2;
+        grid-row: 3/span 1;
+    }
+    
+    .sunset-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 3/span 1;
+        grid-row: 4/span 2;
+    }
+    
+    .mopop-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 1;
+        grid-row: 6/span 1;
+    }
+    
+    .bigben-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 2/span 3;
+        grid-row: 8/span 1;
+    }
+    
+    .headphones-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 3/span 1;
+        grid-row: 7/span 1;
+    }
+    
+    .familyatbeach-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 2;
+        grid-row: 7/span 1;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .nav-links{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .resume{
+        padding: .5%;
+    }
+
+    li.resume{
+        list-style: circle;
+    }
+
+    .portrait{
+        width: auto;
+        padding: 0;
+        margin: 0;
+        padding-left: 1%;
+    }
+
+    .landscape{
+        width: auto;
+        padding: 0;
+        padding-left: 1%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 0;
+        padding-left: 1%;
+
+      }
+    
+    .daytona-image{
+        width: 20vw;
+        display: grid;
+        overflow: hidden;
+        grid-column: 3/span 1;
+        grid-row: 5/span 2;
+    }
+    
+    .abbeyroad-image{
+        width: 70vw;
+        overflow: hidden;
+        grid-column: 2/span 3;
+        grid-row: 1/span 1;
+    }
+    
+    .rocky-image{
+        width: 30vw;
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+    }
+    
+    .upnorth-image{
+        width: 40vw;
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 2;
+        grid-row: 3/span 1;
+    }
+    
+    .ski-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 5/span 1;
+        grid-row: 3/span 1;
+    }
+    
+    .california-image{
+        width: 40vw;
+        display: grid;
+        overflow: hidden;
+        grid-column: 3/span 2;
+        grid-row: 2/span 1;
+    }
+    
+    .sunset-image{
+        width: 35vw;
+        display: grid;
+        overflow: hidden;
+        grid-column: 2/span 1;
+        grid-row: 2/span 2;
+    }
+    
+    .mopop-image{
+        width: 35vw;
+        display: grid;
+        overflow: hidden;
+        grid-column: 3/span 1;
+        grid-row: 3/span 1;
+    }
+    
+    .bigben-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 5/span 1;
+        grid-row: 5/span 1;
+    }
+    
+    .headphones-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+    }
+    
+    .familyatbeach-image{
+        display: grid;
+        overflow: hidden;
+        grid-column: 1/span 2;
+        grid-row: 5/span 1;
+    }
+
+    .music-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 0;
+        padding-left: 5%;
+
+      }
+
+
+}
