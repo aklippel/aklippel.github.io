@@ -394,97 +394,10 @@ input[type=submit]:hover {
         padding-left: 1%;
     }
 
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        margin: 0;
-        padding-left: 1%;
-
-      }
-    
-    .daytona-image{
-        width: 20vw;
-        display: grid;
-        overflow: hidden;
-        grid-column: 3/span 1;
-        grid-row: 5/span 2;
-    }
-    
-    .abbeyroad-image{
-        width: 70vw;
-        overflow: hidden;
-        grid-column: 2/span 3;
-        grid-row: 1/span 1;
-    }
-    
-    .rocky-image{
-        width: 30vw;
-        display: grid;
-        overflow: hidden;
-        grid-column: 1/span 1;
-        grid-row: 1/span 1;
-    }
-    
-    .upnorth-image{
-        width: 40vw;
-        display: grid;
-        overflow: hidden;
-        grid-column: 1/span 2;
-        grid-row: 3/span 1;
-    }
-    
-    .ski-image{
-        display: grid;
-        overflow: hidden;
-        grid-column: 5/span 1;
-        grid-row: 3/span 1;
-    }
-    
-    .california-image{
-        width: 40vw;
-        display: grid;
-        overflow: hidden;
-        grid-column: 3/span 2;
-        grid-row: 2/span 1;
-    }
-    
-    .sunset-image{
-        width: 35vw;
-        display: grid;
-        overflow: hidden;
-        grid-column: 2/span 1;
-        grid-row: 2/span 2;
-    }
-    
-    .mopop-image{
-        width: 35vw;
-        display: grid;
-        overflow: hidden;
-        grid-column: 3/span 1;
-        grid-row: 3/span 1;
-    }
-    
-    .bigben-image{
-        display: grid;
-        overflow: hidden;
-        grid-column: 5/span 1;
-        grid-row: 5/span 1;
-    }
-    
-    .headphones-image{
-        display: grid;
-        overflow: hidden;
-        grid-column: 1/span 1;
-        grid-row: 2/span 1;
-    }
-    
-    .familyatbeach-image{
-        display: grid;
-        overflow: hidden;
-        grid-column: 1/span 2;
-        grid-row: 5/span 1;
-    }
+    .trav{
+        display: flex;
+        flex-flow: column wrap;
+}
 
     .music-container{
         display: grid;
